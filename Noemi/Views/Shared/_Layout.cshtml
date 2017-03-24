@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- ==========================
+        Meta Tags
+    =========================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==========================
+    Title
+    =========================== -->
+    <title>@ViewBag.Title - SH Consultancy</title>
+
+
+    <!-- ==========================
+        Favicons
+    =========================== -->
+    <link rel="shortcut icon" href="~/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="~/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/icons/apple-touch-icon-114x114.png">
+
+    <!-- ==========================
+        Fonts
+    =========================== -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- ==========================
+    CSS
+    =========================== -->
+    <link href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/color/blue.css" id="main-color" rel="stylesheet" type="text/css">
+    @Styles.Render("~/bundles/css")
+    <!-- ==========================
+        JS
+    =========================== -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+    <!-- ==========================
+        SCROLL TOP - START
+    =========================== -->
+    <div id="scrolltop" class="hidden-xs"><i class="fa fa-angle-up"></i></div>
+    <!-- ==========================
+        SCROLL TOP - END
+    =========================== -->
+
+    @RenderBody()
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=true"></script>
+    @Scripts.Render("~/bundles/js")
+    @RenderSection("scripts", required: false)
+
+
+</body>
+</html>

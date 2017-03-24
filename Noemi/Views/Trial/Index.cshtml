@@ -1,0 +1,60 @@
+﻿@model Noemi.Controllers.TrialController.TrialViewModel
+
+<div id="page-wrapper">
+    <section class="content" id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <h1>Some amazing header that people see at all times</h1>
+                    <h2>Some amazing header that people see at all times</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="~/Images/@(Model.Index).png"/>
+                </div>
+                <div class="col-sm-6">
+                    @for (int i = 0; i < Model.ColourMode; i++)
+                    {
+                        string colour = Model.Colours.Split(',')[i];
+                        <div class="col-sm-@(Model.ColourMode == 36 ? "2" : "4")" >
+                            <div class="side-image" style="background-color: @colour"></div>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    <label for="amount">Some text that goes with the slider:</label>
+                    <input type="text" id="amount" readonly>
+                </p>
+
+                <div id="visual-slider"></div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+@helper GenerateImage(int i, int t, string images)
+{
+    
+}
+
+@section scripts {
+    <script type="text/javascript">
+        $(function() {
+            $("#visual-slider").slider({
+                range: "min",
+                value: 50,
+                min: 1,
+                max: 100,
+                slide: function( event, ui ) {
+                    $("#amount").val("$" + ui.value );
+                }
+            });
+            $("#amount").val("$" + $("#visual-slider").slider("value"));
+        });
+    </script>
+}
