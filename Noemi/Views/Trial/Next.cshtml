@@ -1,0 +1,124 @@
+﻿@model Noemi.Controllers.TrialController.TrialViewModel
+
+<div id="page-wrapper">
+    <section class="content" id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <h1>Some amazing header that people see at all times</h1>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-sm-6" style="text-align: center; @(Model.ColourMode == 36 ? "margin-top: 110px;" : "" )">
+                    <img class="trial-image" src="~/Images/@(Model.Image)"/>
+                </div>
+                <div class="col-sm-6">
+                    @for (int i = 0; i < Model.Colours.GetLength(0); i++)
+                    {
+                        <div class="col-sm-12">
+                            @for (int j = 0; j < Model.Colours.GetLength(0); j++)
+                            {
+                                string colour = Model.Colours[i, j];
+                                <div class="side-image" style="background-color: @colour" data-colour="@colour"></div>
+
+                            }    
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="row hidden" id="awesome-slider">
+                <p>
+                    <label for="amount">Some text that goes with the slider:</label>
+                    @*<input type="text" id="amount" readonly>*@
+                </p>
+
+                <div class="col-sm-2" style="text-align: center;">
+                    <span>I chose completely randomly</span>
+                </div>
+                <div class="col-sm-6">
+                    <div id="visual-slider"></div>    
+                </div>
+                <div class="col-sm-2" style="text-align: center;">
+                    <span>This match feels very right</span>
+                </div>
+                <div class="col-sm-2 hidden" id="awesome-next">
+                    @using (Html.BeginForm("Next", "Trial", FormMethod.Post))
+                    {
+                        @Html.HiddenFor(m => m.Index)
+                        @Html.HiddenFor(m => m.Colour)
+                        @Html.HiddenFor(m => m.Image)
+                        @Html.HiddenFor(m => m.TimeColour)
+                        @Html.HiddenFor(m => m.TimeNext)
+                        @Html.HiddenFor(m => m.Slider)
+                        <fieldset>
+                            <div class="form-group control-group">
+                                <div class="controls">
+                                    <button type="submit" id="send" class="btn btn-primary btn-sm"><i class="fa fa-arrow-right"></i>Next</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    }
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+</div>
+
+@helper GenerateImage(int i, int t, string images)
+{
+    
+}
+
+@section scripts {
+    <script type="text/javascript">
+        var t1 = new Date();
+        var t2 = new Date();
+        var colourSelected = false;
+        $(function() {
+
+            $("#visual-slider").click(function () {
+                $("#awesome-next").removeClass("hidden");
+            });
+
+            $(".side-image").click(function() {
+                if (colourSelected)
+                    return;
+                colourSelected = !colourSelected;
+
+                $(this).addClass("dashed-border");
+
+                t2 = new Date();
+                var seconds = Math.abs((t2.getTime() - t1.getTime()) / 1000);
+                $("#TimeColour").attr("value", seconds);
+
+                var colour = $(this).attr("data-colour");
+                $("#Colour").attr("value", colour);
+                // set this to a specific colour
+                $("#awesome-slider").removeClass("hidden");
+            });
+
+            $("#send").click(function() {
+                var t3 = new Date();
+                var seconds = Math.abs((t3.getTime() - t2.getTime()) / 1000);
+                $("#TimeNext").attr("value", seconds);
+
+
+                debugger;
+            });
+
+            $("#visual-slider").slider({
+                range: "min",
+                value: 50,
+                min: 1,
+                max: 100,
+                slide: function(event, ui) {
+                    $("#Slider").attr("value", ui.value);
+                }
+            });
+            //$("#amount").val("$" + $("#visual-slider").slider("value"));
+        });
+    </script>
+}

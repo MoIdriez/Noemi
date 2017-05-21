@@ -18,5 +18,21 @@
 
 .side-image {
     height: 50px;
+    width: 50px;
     margin-bottom: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.ui-widget-header {
+    background: white;
+} 
+
+.dashed-border {
+    border: 2px dashed black;
+}
+
+.trial-image {
+    max-width:100%;
+    max-height:100%;
 }

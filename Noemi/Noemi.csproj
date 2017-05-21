@@ -148,7 +148,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ConsentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -238,7 +237,9 @@
     <Content Include="Views\Consent\Index.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\Settings.cshtml" />
-    <Content Include="Views\Trial\Index.cshtml" />
+    <Content Include="Views\Trial\Next.cshtml" />
+    <None Include="Views\Consent\Consent.cshtml" />
+    <None Include="Views\Consent\Explanation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
