@@ -1,110 +1,114 @@
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\ApplicationInsights.config
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\roslyn\csc.exe
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\roslyn\Microsoft.CodeAnalysis.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\roslyn\Microsoft.CSharp.Core.targets
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\roslyn\Microsoft.VisualBasic.Core.targets
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\roslyn\System.Collections.Immutable.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\roslyn\System.Reflection.Metadata.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\roslyn\vbc.exe
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\roslyn\VBCSCompiler.exe
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\roslyn\VBCSCompiler.exe.config
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Noemi.dll.config
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Noemi.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Noemi.pdb
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Antlr3.Runtime.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Microsoft.AI.Agent.Intercept.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Microsoft.AI.DependencyCollector.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Microsoft.AI.PerfCounterCollector.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Microsoft.AI.ServerTelemetryChannel.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Microsoft.AI.Web.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Microsoft.AI.WindowsServer.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Microsoft.ApplicationInsights.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Microsoft.Web.Infrastructure.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Newtonsoft.Json.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\System.Web.Helpers.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\System.Web.Mvc.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\System.Web.Optimization.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\System.Web.Razor.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\System.Web.WebPages.Deployment.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\System.Web.WebPages.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\System.Web.WebPages.Razor.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\WebGrease.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Microsoft.AI.DependencyCollector.xml
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Microsoft.AI.ServerTelemetryChannel.xml
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Microsoft.AI.Web.xml
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Microsoft.AI.WindowsServer.xml
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Microsoft.ApplicationInsights.xml
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\System.Web.Helpers.xml
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\System.Web.Mvc.xml
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\System.Web.Optimization.xml
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\System.Web.Razor.xml
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\System.Web.WebPages.xml
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\System.Web.WebPages.Deployment.xml
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\System.Web.WebPages.Razor.xml
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Antlr3.Runtime.pdb
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\bin\Newtonsoft.Json.xml
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\obj\Debug\Noemi.csprojResolveAssemblyReference.cache
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\obj\Debug\Noemi.dll
-c:\users\p0079746\documents\visual studio 2015\Projects\Noemi\Noemi\obj\Debug\Noemi.pdb
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\ApplicationInsights.config
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\roslyn\csc.exe
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\roslyn\vbc.exe
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\roslyn\VBCSCompiler.exe
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Noemi.dll.config
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Noemi.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Noemi.pdb
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Antlr3.Runtime.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\EntityFramework.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\EntityFramework.SqlServer.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.AI.Web.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.ApplicationInsights.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Newtonsoft.Json.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\System.Web.Helpers.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\System.Web.Mvc.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\System.Web.Optimization.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\System.Web.Razor.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\System.Web.WebPages.Deployment.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\System.Web.WebPages.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\System.Web.WebPages.Razor.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\WebGrease.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\EntityFramework.xml
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\EntityFramework.SqlServer.xml
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.AI.ServerTelemetryChannel.xml
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.AI.Web.xml
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.ApplicationInsights.xml
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\System.Web.Helpers.xml
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\System.Web.Mvc.xml
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\System.Web.Optimization.xml
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\System.Web.Razor.xml
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\System.Web.WebPages.xml
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\System.Web.WebPages.Deployment.xml
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\System.Web.WebPages.Razor.xml
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Antlr3.Runtime.pdb
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Newtonsoft.Json.xml
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\obj\Debug\Noemi.dll
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\obj\Debug\Noemi.pdb
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\obj\Debug\Noemi.csprojResolveAssemblyReference.cache
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/ApplicationInsights.config
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/roslyn/csc.exe
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/roslyn/Microsoft.CodeAnalysis.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/roslyn/Microsoft.CSharp.Core.targets
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/roslyn/Microsoft.VisualBasic.Core.targets
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/roslyn/System.Collections.Immutable.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/roslyn/System.Reflection.Metadata.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/roslyn/vbc.exe
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/roslyn/VBCSCompiler.exe
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/roslyn/VBCSCompiler.exe.config
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Noemi.dll.config
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Noemi.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Noemi.pdb
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Antlr3.Runtime.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Microsoft.AI.Agent.Intercept.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Microsoft.AI.DependencyCollector.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Microsoft.AI.PerfCounterCollector.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Microsoft.AI.ServerTelemetryChannel.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Microsoft.AI.Web.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Microsoft.AI.WindowsServer.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Microsoft.ApplicationInsights.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Microsoft.Web.Infrastructure.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Newtonsoft.Json.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/System.Web.Helpers.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/System.Web.Mvc.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/System.Web.Optimization.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/System.Web.Razor.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/System.Web.WebPages.Deployment.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/System.Web.WebPages.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/System.Web.WebPages.Razor.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/WebGrease.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Microsoft.AI.DependencyCollector.xml
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Microsoft.AI.ServerTelemetryChannel.xml
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Microsoft.AI.Web.xml
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Microsoft.AI.WindowsServer.xml
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Microsoft.ApplicationInsights.xml
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/System.Web.Helpers.xml
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/System.Web.Mvc.xml
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/System.Web.Optimization.xml
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/System.Web.Razor.xml
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/System.Web.WebPages.xml
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/System.Web.WebPages.Deployment.xml
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/System.Web.WebPages.Razor.xml
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Antlr3.Runtime.pdb
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/bin/Newtonsoft.Json.xml
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/obj/Debug/Noemi.csprojResolveAssemblyReference.cache
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/obj/Debug/Noemi.dll
+c:/users/p0079746/documents/visual studio 2015/Projects/Noemi/Noemi/obj/Debug/Noemi.pdb
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/ApplicationInsights.config
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/roslyn/csc.exe
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/roslyn/Microsoft.CodeAnalysis.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/roslyn/Microsoft.CSharp.Core.targets
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/roslyn/Microsoft.VisualBasic.Core.targets
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/roslyn/System.Collections.Immutable.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/roslyn/System.Reflection.Metadata.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/roslyn/vbc.exe
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/roslyn/VBCSCompiler.exe
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/roslyn/VBCSCompiler.exe.config
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Noemi.dll.config
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Noemi.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Noemi.pdb
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Antlr3.Runtime.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/EntityFramework.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/EntityFramework.SqlServer.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Microsoft.AI.Agent.Intercept.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Microsoft.AI.DependencyCollector.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Microsoft.AI.PerfCounterCollector.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Microsoft.AI.ServerTelemetryChannel.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Microsoft.AI.Web.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Microsoft.AI.WindowsServer.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Microsoft.ApplicationInsights.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Microsoft.Web.Infrastructure.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Newtonsoft.Json.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/System.Web.Helpers.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/System.Web.Mvc.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/System.Web.Optimization.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/System.Web.Razor.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/System.Web.WebPages.Deployment.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/System.Web.WebPages.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/System.Web.WebPages.Razor.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/WebGrease.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/EntityFramework.xml
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/EntityFramework.SqlServer.xml
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Microsoft.AI.DependencyCollector.xml
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Microsoft.AI.ServerTelemetryChannel.xml
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Microsoft.AI.Web.xml
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Microsoft.AI.WindowsServer.xml
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Microsoft.ApplicationInsights.xml
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/System.Web.Helpers.xml
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/System.Web.Mvc.xml
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/System.Web.Optimization.xml
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/System.Web.Razor.xml
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/System.Web.WebPages.xml
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/System.Web.WebPages.Deployment.xml
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/System.Web.WebPages.Razor.xml
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Antlr3.Runtime.pdb
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/bin/Newtonsoft.Json.xml
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/obj/Debug/Noemi.dll
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/obj/Debug/Noemi.pdb
+C:/Users/MIDRIES/Documents/GitHub/Noemi/Noemi/obj/Debug/Noemi.csprojResolveAssemblyReference.cache
+/Users/Sophrosyne/Documents/GitHub/Noemi/Noemi/obj/Debug/Noemi.csprojResolveAssemblyReference.cache
+/Users/Sophrosyne/Documents/GitHub/Noemi/Noemi/obj/Debug/Noemi.csproj.CoreCompileInputs.cache
+/Users/Sophrosyne/Documents/GitHub/Noemi/Noemi/obj/Debug/Noemi.dll
+/Users/Sophrosyne/Documents/GitHub/Noemi/Noemi/obj/Debug/Noemi.pdb

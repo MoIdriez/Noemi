@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{80EF8C1B-1991-4BC3-8D3C-EB36D5B0DEE3}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Noemi/Views/Trial/Next.cshtml">
+    <Files>
+      <File FileName="Noemi/Web.config" Line="17" Column="1" />
+      <File FileName="Noemi/Views/Home/Index.cshtml" Line="11" Column="40" />
+      <File FileName="Noemi/Views/Consent/Consent.cshtml" Line="1" Column="1" />
+      <File FileName="Noemi/Views/Consent/Explanation.cshtml" Line="1" Column="1" />
+      <File FileName="Noemi/Views/Consent/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Noemi/Controllers/ConsentController.cs" Line="10" Column="41" />
+      <File FileName="Noemi/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Noemi/Views/Trial/Next.cshtml" Line="32" Column="63" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Noemi PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
