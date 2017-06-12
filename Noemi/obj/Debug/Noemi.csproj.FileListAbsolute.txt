@@ -107,3 +107,4 @@ C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Antlr3.Runtime.pdb
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Newtonsoft.Json.xml
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\obj\Debug\Noemi.dll
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\obj\Debug\Noemi.pdb
+C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\obj\Debug\Noemi.csprojResolveAssemblyReference.cache
