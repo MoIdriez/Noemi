@@ -68,6 +68,8 @@ C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Noemi.dll.config
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Noemi.dll
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Noemi.pdb
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Antlr3.Runtime.dll
+C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\EntityFramework.dll
+C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\EntityFramework.SqlServer.dll
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.AI.DependencyCollector.dll
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -86,6 +88,8 @@ C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\System.Web.WebPages.Deployment
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\System.Web.WebPages.dll
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\System.Web.WebPages.Razor.dll
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\WebGrease.dll
+C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\EntityFramework.xml
+C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\EntityFramework.SqlServer.xml
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Microsoft.AI.Web.xml
@@ -103,4 +107,3 @@ C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Antlr3.Runtime.pdb
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\bin\Newtonsoft.Json.xml
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\obj\Debug\Noemi.dll
 C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\obj\Debug\Noemi.pdb
-C:\Users\MIDRIES\Documents\GitHub\Noemi\Noemi\obj\Debug\Noemi.csprojResolveAssemblyReference.cache

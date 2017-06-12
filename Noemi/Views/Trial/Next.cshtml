@@ -29,8 +29,7 @@
             </div>
             <div class="row hidden" id="awesome-slider">
                 <p>
-                    <label for="amount">Some text that goes with the slider:</label>
-                    @*<input type="text" id="amount" readonly>*@
+                    <label>Some text that goes with the slider:</label>
                 </p>
 
                 <div class="col-sm-2" style="text-align: center;">
@@ -45,9 +44,9 @@
                 <div class="col-sm-2 hidden" id="awesome-next">
                     @using (Html.BeginForm("Next", "Trial", FormMethod.Post))
                     {
-                        @Html.HiddenFor(m => m.Index)
+                        @Html.HiddenFor(m => m.Index, new { @Value = Model.Index})
                         @Html.HiddenFor(m => m.Colour)
-                        @Html.HiddenFor(m => m.Image)
+                        @Html.HiddenFor(m => m.Image, new { @Value = Model.Image })
                         @Html.HiddenFor(m => m.TimeColour)
                         @Html.HiddenFor(m => m.TimeNext)
                         @Html.HiddenFor(m => m.Slider)
@@ -67,19 +66,20 @@
 
 </div>
 
-@helper GenerateImage(int i, int t, string images)
-{
-    
-}
-
 @section scripts {
     <script type="text/javascript">
         var t1 = new Date();
         var t2 = new Date();
         var colourSelected = false;
+
         $(function() {
 
             $("#visual-slider").click(function () {
+                
+                var t3 = new Date();
+                var seconds = Math.abs((t3.getTime() - t2.getTime()));
+                $("#TimeNext").attr("value", seconds);
+
                 $("#awesome-next").removeClass("hidden");
             });
 
@@ -91,22 +91,13 @@
                 $(this).addClass("dashed-border");
 
                 t2 = new Date();
-                var seconds = Math.abs((t2.getTime() - t1.getTime()) / 1000);
+                var seconds = Math.abs((t2.getTime() - t1.getTime()));
                 $("#TimeColour").attr("value", seconds);
 
                 var colour = $(this).attr("data-colour");
                 $("#Colour").attr("value", colour);
                 // set this to a specific colour
                 $("#awesome-slider").removeClass("hidden");
-            });
-
-            $("#send").click(function() {
-                var t3 = new Date();
-                var seconds = Math.abs((t3.getTime() - t2.getTime()) / 1000);
-                $("#TimeNext").attr("value", seconds);
-
-
-                debugger;
             });
 
             $("#visual-slider").slider({
@@ -118,7 +109,6 @@
                     $("#Slider").attr("value", ui.value);
                 }
             });
-            //$("#amount").val("$" + $("#visual-slider").slider("value"));
         });
     </script>
 }

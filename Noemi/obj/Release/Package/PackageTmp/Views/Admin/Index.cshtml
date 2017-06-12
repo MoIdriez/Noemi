@@ -1,0 +1,27 @@
+﻿@{ ViewBag.Title = "Admin"; }
+
+<div id="page-wrapper">
+    <section class="content" id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <h1>Welcome awesome admin</h1>
+                    <p>I like totally trust you but there are some people over here that just want be sure so can you please enter the super secret password (just whisper it).</p>
+                    @using (Html.BeginForm("Login", "Admin", FormMethod.Post))
+                    {
+                        <fieldset>
+                            <div class="form-group control-group">
+                                <div class="controls">
+                                    <label for="password">Password:<span>*</span></label>
+                                    <input type="password" class="form-control" placeholder="Your Password" id="password" name="password" data-validation-required-message="Password." aria-invalid="false">
+                                    <button type="submit" id="send" class="btn btn-primary btn-sm"><i class="fa fa-check"></i>I totally accept your conditions</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

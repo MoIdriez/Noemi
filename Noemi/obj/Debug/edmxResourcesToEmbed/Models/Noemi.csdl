@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NoemiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Participant">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProloficID" Type="String" MaxLength="225" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SessionID" Type="String" MaxLength="225" FixedLength="false" Unicode="false" />
+    <Property Name="ColourOrientation" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ColourOrderIsRandom" Type="Boolean" Nullable="false" />
+    <Property Name="ImageIterations" Type="Int32" Nullable="false" />
+    <Property Name="ImageOrderIsRandom" Type="Boolean" Nullable="false" />
+    <Property Name="ColourMode" Type="Int32" Nullable="false" />
+    <Property Name="Colours4" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Colours9" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Colours36" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Trials" Relationship="Self.FK_Trials_Participants" FromRole="Participants" ToRole="Trials" />
+  </EntityType>
+  <EntityType Name="Trial">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ParticipantID" Type="Int32" Nullable="false" />
+    <Property Name="TrialIndex" Type="Int32" Nullable="false" />
+    <Property Name="TimeColour" Type="Int32" Nullable="false" />
+    <Property Name="TimeNext" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Colour" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Slider" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Participant" Relationship="Self.FK_Trials_Participants" FromRole="Trials" ToRole="Participants" />
+  </EntityType>
+  <Association Name="FK_Trials_Participants">
+    <End Role="Participants" Type="Self.Participant" Multiplicity="1" />
+    <End Role="Trials" Type="Self.Trial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Participants">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Trials">
+        <PropertyRef Name="ParticipantID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NoemiEntities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Participants" EntityType="Self.Participant" />
+    <EntitySet Name="Trials" EntityType="Self.Trial" />
+    <AssociationSet Name="FK_Trials_Participants" Association="Self.FK_Trials_Participants">
+      <End Role="Participants" EntitySet="Participants" />
+      <End Role="Trials" EntitySet="Trials" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

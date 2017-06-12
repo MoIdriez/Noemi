@@ -12,7 +12,7 @@ namespace Noemi.Controllers
 
         public ActionResult Index()
         {
-            var model = GetModel(1);
+            var model = GetModel(0);
             return View("Next", model);
         }
 
@@ -22,6 +22,7 @@ namespace Noemi.Controllers
         {
             var trial = new Trial
             {
+                Index = model.Index,
                 TimeColour = model.TimeColour,
                 TimeNext = model.TimeNext,
                 Image = model.Image,
@@ -32,23 +33,26 @@ namespace Noemi.Controllers
             var trials = Participant.Trials;
             trials.Add(trial);
             Participant.Trials = trials;
-            
-            if (HasFinished())
-                return Redirect(Config.ExternalLink);
 
-            return View(GetModel(model.Index++));
+            if (HasFinished())
+            {
+                Participant.Save();
+                return Redirect(Config.ExternalLink);
+            }
+
+            return View(GetModel(model.Index));
         }
 
         private bool HasFinished()
         {
-            return Participant.Trials.Count == Participant.Images.Count;
+            return Participant.Trials.Count >= Participant.Images.Count;
         }
 
         public TrialViewModel GetModel(int index)
         {
             return new TrialViewModel
             {
-                Index = index,
+                Index = index+1,
                 ColourMode = Convert.ToInt32(Config.ColourMode),
                 Colours = GetColours(),
                 TimeNext = 0,
@@ -157,8 +161,8 @@ namespace Noemi.Controllers
         public class TrialViewModel
         {
             public int Index { get; set; }
-            public double TimeColour { get; set; }
-            public double TimeNext { get; set; }
+            public int TimeColour { get; set; }
+            public int TimeNext { get; set; }
             public int ColourMode { get; set; }
             public string[,] Colours { get; set; }
             public string Image { get; set; }

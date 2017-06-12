@@ -1,0 +1,37 @@
+﻿@{ ViewBag.Title = "Home"; }
+
+<div id="page-wrapper">
+    <!-- ==========================
+        CONTACT - START
+    =========================== -->
+    <section class="content" id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <h1>Welcome</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam quam eget fringilla iaculis. Ut aliquam mauris augue, vitae ullamcorper massa consectetur quis. Maecenas posuere a lectus eu hendrerit. Ut viverra odio nec ultrices convallis. Aliquam blandit tincidunt leo, et consequat nibh finibus eget. Morbi fringilla purus vel porttitor placerat. Ut sodales tincidunt mi id imperdiet.</p>
+                    <p>Ut consectetur nisl in ipsum malesuada, non molestie turpis volutpat. Duis nulla elit, molestie non iaculis a, elementum et nunc. Cras malesuada eros ut nisl rutrum, vel dictum elit efficitur. Maecenas vitae vehicula augue. Sed vulputate sapien ipsum, a vehicula leo dignissim eu. Etiam interdum ultricies lorem ut rhoncus. Aenean at eros mi. In vitae purus nunc. Quisque scelerisque quam magna, eu venenatis augue fermentum in. Aliquam erat volutpat. In quis orci vel mi porttitor ornare quis in risus. Nulla at magna neque. Suspendisse non libero eleifend, pharetra purus in, facilisis diam. Donec rhoncus facilisis nisl eget volutpat. Praesent rhoncus, ipsum non pharetra semper, sem enim consequat metus, eu placerat nibh sem a velit.</p>
+                    <p>Pellentesque massa turpis, tempus eget vestibulum et, tincidunt vitae diam. Phasellus vehicula leo quis magna vestibulum luctus. Quisque vitae mi at odio tincidunt commodo. Nullam tempor ligula in velit consequat porttitor. Suspendisse quam arcu, luctus ut dui sit amet, condimentum auctor est. Praesent hendrerit arcu elit, a mollis dui volutpat eget. Sed sit amet eros a ipsum maximus consequat vitae nec nisl. Vivamus dignissim sollicitudin finibus. Vestibulum vitae dui convallis mi pellentesque mollis sit amet ac dui. Duis porta, mi a ultricies aliquam, tellus nibh consequat turpis, vel ultrices lacus enim sit amet augue. Morbi faucibus vehicula tortor cursus commodo. Maecenas tristique eros vel maximus viverra. Aliquam lectus neque, gravida eu molestie et, tempor vitae erat.</p>
+                    <p>Phasellus nec lacinia neque, in fermentum odio. Pellentesque efficitur risus ut urna efficitur, eu rutrum odio varius. Nam bibendum massa vel ligula suscipit pretium. Maecenas in mi blandit nisi suscipit volutpat volutpat sed augue. Nullam elit nulla, venenatis ut sem a, convallis accumsan ipsum. Nunc facilisis sagittis vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer malesuada nisi et dolor ullamcorper cursus. Proin pulvinar viverra purus, ac elementum turpis posuere in.</p>
+                    <p>Curabitur rutrum facilisis pretium. Praesent viverra ut justo vitae malesuada. Aliquam scelerisque accumsan purus, et bibendum libero condimentum faucibus. Etiam dictum, mauris ut tincidunt tristique, dui mauris egestas purus, at sodales mi erat vitae lorem. Aliquam at sapien ullamcorper, scelerisque neque at, laoreet erat. In porttitor tincidunt posuere. Praesent at vestibulum felis, elementum venenatis nibh.</p>
+                    
+                    @using (Html.BeginForm("Consent", "Consent", FormMethod.Get))
+                    {
+                        <fieldset>
+                            <div class="form-group control-group">
+                                <div class="controls">
+                                    <button type="submit" id="send" class="btn btn-primary btn-sm"><i class="fa fa-arrow-right"></i>Next</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==========================
+        CONTACT - END
+    =========================== -->
+
+</div>

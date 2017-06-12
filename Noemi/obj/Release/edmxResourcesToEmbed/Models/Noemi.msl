@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NoemiModelStoreContainer" CdmEntityContainer="NoemiEntities3">
+    <EntitySetMapping Name="Participants">
+      <EntityTypeMapping TypeName="NoemiModel.Participant">
+        <MappingFragment StoreEntitySet="Participants">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProloficID" ColumnName="ProloficID" />
+          <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+          <ScalarProperty Name="ColourOrientation" ColumnName="ColourOrientation" />
+          <ScalarProperty Name="ColourOrderIsRandom" ColumnName="ColourOrderIsRandom" />
+          <ScalarProperty Name="ImageIterations" ColumnName="ImageIterations" />
+          <ScalarProperty Name="ImageOrderIsRandom" ColumnName="ImageOrderIsRandom" />
+          <ScalarProperty Name="ColourMode" ColumnName="ColourMode" />
+          <ScalarProperty Name="Colours4" ColumnName="Colours4" />
+          <ScalarProperty Name="Colours9" ColumnName="Colours9" />
+          <ScalarProperty Name="Colours36" ColumnName="Colours36" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trials">
+      <EntityTypeMapping TypeName="NoemiModel.Trial">
+        <MappingFragment StoreEntitySet="Trials">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParticipantID" ColumnName="ParticipantID" />
+          <ScalarProperty Name="TrialIndex" ColumnName="TrialIndex" />
+          <ScalarProperty Name="TimeColour" ColumnName="TimeColour" />
+          <ScalarProperty Name="TimeNext" ColumnName="TimeNext" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Colour" ColumnName="Colour" />
+          <ScalarProperty Name="Slider" ColumnName="Slider" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

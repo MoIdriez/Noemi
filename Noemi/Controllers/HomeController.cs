@@ -10,6 +10,7 @@ namespace Noemi.Controllers
     {
         public ActionResult Index(string prolific_pid = "", string session_id = "")
         {
+            BaseController.Participant.Trials = new List<BaseController.Trial>();
             if (prolific_pid == string.Empty)
                 return View();
             Session["ProloficID"] = prolific_pid;

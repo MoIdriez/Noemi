@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="NoemiEntities3-Web.config Connection String" description="NoemiEntities3 Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.Noemi.csdl|res://*/Models.Noemi.ssdl|res://*/Models.Noemi.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=188.121.44.217;Integrated Security=False;User ID=NoemiDreksler;Password=H3lloNoemi;Connect Timeout=15;Encrypt=False;Packet Size=4096;multipleactiveresultsets=True;application name=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\MIDRIES\\Documents\\GitHub\\Noemi\\Noemi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='NoemiEntities3']/@connectionString" />
+  </parameter>
+  <parameter name="Noemi.Models.NoemiContext-Web.config Connection String" description="Noemi.Models.NoemiContext Connection String used in web.config by the application to access the database." defaultValue="Noemi.Models.NoemiContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\MIDRIES\\Documents\\GitHub\\Noemi\\Noemi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Noemi.Models.NoemiContext']/@connectionString" />
+  </parameter>
+</parameters>

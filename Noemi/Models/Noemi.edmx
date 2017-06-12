@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="NoemiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Participants">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProloficID" Type="varchar" MaxLength="225" Nullable="false" />
+          <Property Name="SessionID" Type="varchar" MaxLength="225" />
+          <Property Name="ColourOrientation" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ColourOrderIsRandom" Type="bit" Nullable="false" />
+          <Property Name="ImageIterations" Type="int" Nullable="false" />
+          <Property Name="ImageOrderIsRandom" Type="bit" Nullable="false" />
+          <Property Name="ColourMode" Type="int" Nullable="false" />
+          <Property Name="Colours4" Type="text" Nullable="false" />
+          <Property Name="Colours9" Type="text" Nullable="false" />
+          <Property Name="Colours36" Type="text" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Trials">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ParticipantID" Type="int" Nullable="false" />
+          <Property Name="TrialIndex" Type="int" Nullable="false" />
+          <Property Name="TimeColour" Type="int" Nullable="false" />
+          <Property Name="TimeNext" Type="int" Nullable="false" />
+          <Property Name="Image" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="Colour" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="Slider" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Trials_Participants">
+          <End Role="Participants" Type="Self.Participants" Multiplicity="1" />
+          <End Role="Trials" Type="Self.Trials" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Participants">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Trials">
+              <PropertyRef Name="ParticipantID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="NoemiModelStoreContainer">
+          <EntitySet Name="Participants" EntityType="Self.Participants" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Trials" EntityType="Self.Trials" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Trials_Participants" Association="Self.FK_Trials_Participants">
+            <End Role="Participants" EntitySet="Participants" />
+            <End Role="Trials" EntitySet="Trials" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NoemiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Participant">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProloficID" Type="String" MaxLength="225" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SessionID" Type="String" MaxLength="225" FixedLength="false" Unicode="false" />
+          <Property Name="ColourOrientation" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ColourOrderIsRandom" Type="Boolean" Nullable="false" />
+          <Property Name="ImageIterations" Type="Int32" Nullable="false" />
+          <Property Name="ImageOrderIsRandom" Type="Boolean" Nullable="false" />
+          <Property Name="ColourMode" Type="Int32" Nullable="false" />
+          <Property Name="Colours4" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Colours9" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Colours36" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Trials" Relationship="Self.FK_Trials_Participants" FromRole="Participants" ToRole="Trials" />
+        </EntityType>
+        <EntityType Name="Trial">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ParticipantID" Type="Int32" Nullable="false" />
+          <Property Name="TrialIndex" Type="Int32" Nullable="false" />
+          <Property Name="TimeColour" Type="Int32" Nullable="false" />
+          <Property Name="TimeNext" Type="Int32" Nullable="false" />
+          <Property Name="Image" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Colour" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Slider" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Participant" Relationship="Self.FK_Trials_Participants" FromRole="Trials" ToRole="Participants" />
+        </EntityType>
+        <Association Name="FK_Trials_Participants">
+          <End Role="Participants" Type="Self.Participant" Multiplicity="1" />
+          <End Role="Trials" Type="Self.Trial" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Participants">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Trials">
+              <PropertyRef Name="ParticipantID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="NoemiEntities3" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Participants" EntityType="Self.Participant" />
+          <EntitySet Name="Trials" EntityType="Self.Trial" />
+          <AssociationSet Name="FK_Trials_Participants" Association="Self.FK_Trials_Participants">
+            <End Role="Participants" EntitySet="Participants" />
+            <End Role="Trials" EntitySet="Trials" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="NoemiModelStoreContainer" CdmEntityContainer="NoemiEntities3">
+          <EntitySetMapping Name="Participants">
+            <EntityTypeMapping TypeName="NoemiModel.Participant">
+              <MappingFragment StoreEntitySet="Participants">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ProloficID" ColumnName="ProloficID" />
+                <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+                <ScalarProperty Name="ColourOrientation" ColumnName="ColourOrientation" />
+                <ScalarProperty Name="ColourOrderIsRandom" ColumnName="ColourOrderIsRandom" />
+                <ScalarProperty Name="ImageIterations" ColumnName="ImageIterations" />
+                <ScalarProperty Name="ImageOrderIsRandom" ColumnName="ImageOrderIsRandom" />
+                <ScalarProperty Name="ColourMode" ColumnName="ColourMode" />
+                <ScalarProperty Name="Colours4" ColumnName="Colours4" />
+                <ScalarProperty Name="Colours9" ColumnName="Colours9" />
+                <ScalarProperty Name="Colours36" ColumnName="Colours36" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Trials">
+            <EntityTypeMapping TypeName="NoemiModel.Trial">
+              <MappingFragment StoreEntitySet="Trials">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ParticipantID" ColumnName="ParticipantID" />
+                <ScalarProperty Name="TrialIndex" ColumnName="TrialIndex" />
+                <ScalarProperty Name="TimeColour" ColumnName="TimeColour" />
+                <ScalarProperty Name="TimeNext" ColumnName="TimeNext" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Colour" ColumnName="Colour" />
+                <ScalarProperty Name="Slider" ColumnName="Slider" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

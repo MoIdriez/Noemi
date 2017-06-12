@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NoemiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Participants">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProloficID" Type="varchar" MaxLength="225" Nullable="false" />
+    <Property Name="SessionID" Type="varchar" MaxLength="225" />
+    <Property Name="ColourOrientation" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ColourOrderIsRandom" Type="bit" Nullable="false" />
+    <Property Name="ImageIterations" Type="int" Nullable="false" />
+    <Property Name="ImageOrderIsRandom" Type="bit" Nullable="false" />
+    <Property Name="ColourMode" Type="int" Nullable="false" />
+    <Property Name="Colours4" Type="text" Nullable="false" />
+    <Property Name="Colours9" Type="text" Nullable="false" />
+    <Property Name="Colours36" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Trials">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParticipantID" Type="int" Nullable="false" />
+    <Property Name="TrialIndex" Type="int" Nullable="false" />
+    <Property Name="TimeColour" Type="int" Nullable="false" />
+    <Property Name="TimeNext" Type="int" Nullable="false" />
+    <Property Name="Image" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Colour" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Slider" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Trials_Participants">
+    <End Role="Participants" Type="Self.Participants" Multiplicity="1" />
+    <End Role="Trials" Type="Self.Trials" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Participants">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Trials">
+        <PropertyRef Name="ParticipantID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NoemiModelStoreContainer">
+    <EntitySet Name="Participants" EntityType="Self.Participants" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Trials" EntityType="Self.Trials" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Trials_Participants" Association="Self.FK_Trials_Participants">
+      <End Role="Participants" EntitySet="Participants" />
+      <End Role="Trials" EntitySet="Trials" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

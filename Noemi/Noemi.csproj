@@ -44,6 +44,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -80,6 +88,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -155,6 +165,28 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Noemi.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Noemi.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Noemi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Noemi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Noemi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Noemi.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NoemiContext.cs" />
+    <Compile Include="Models\Participant.cs">
+      <DependentUpon>Noemi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Trial.cs">
+      <DependentUpon>Noemi.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -187,6 +219,16 @@
     <Content Include="Images\3.png" />
     <Content Include="Images\4.png" />
     <Content Include="Images\5.png" />
+    <Content Include="Models\Noemi.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Noemi.edmx</DependentUpon>
+      <LastGenOutput>Noemi.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Noemi.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Noemi.edmx</DependentUpon>
+      <LastGenOutput>Noemi.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap-hover-dropdown.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -198,6 +240,14 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
+    <EntityDeploy Include="Models\Noemi.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Noemi.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Noemi.edmx.diagram">
+      <DependentUpon>Noemi.edmx</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\psychologystudy.co.uk - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\creative-brands.js" />
     <Content Include="Scripts\custom.js" />
@@ -238,12 +288,11 @@
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\Settings.cshtml" />
     <Content Include="Views\Trial\Next.cshtml" />
-    <None Include="Views\Consent\Consent.cshtml" />
-    <None Include="Views\Consent\Explanation.cshtml" />
+    <Content Include="Views\Consent\Consent.cshtml" />
+    <Content Include="Views\Consent\Explanation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Results\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
@@ -254,6 +303,9 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
